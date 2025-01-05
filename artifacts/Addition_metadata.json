@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "data1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "data2",
+						"type": "uint256"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"additoin.sol": "Addition"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"additoin.sol": {
+			"keccak256": "0x23c145197f9d291e5e13a3df7d63acc87d1de58ca531040b85f81717c62c3853",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://157adc3d80ea3dc7e7ec7c0a02f782a101d8bf42461501f2ef8741c7c2543d8d",
+				"dweb:/ipfs/QmYC7YqH6ReMtNckW6gRno8tenfJmmLFAcRGHPN8J4dHfp"
+			]
+		}
+	},
+	"version": 1
+}
