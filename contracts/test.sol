@@ -41,4 +41,5 @@ contract DataTypes {
     function getDefaultChoice() public pure returns (uint){
         return uint(defaultChoice);
     }
+    
 }
