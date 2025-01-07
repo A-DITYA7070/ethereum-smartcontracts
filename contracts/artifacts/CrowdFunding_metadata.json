@@ -37,13 +37,6 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "Refund",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -114,7 +107,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "extendDeadLine",
+				"name": "extendDeadline",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -140,19 +133,6 @@
 						"internalType": "enum CrowdFunding.CampaignState",
 						"name": "",
 						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getContractBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -265,6 +245,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "refund",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -328,7 +315,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "withDraw",
+				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -347,7 +334,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/crowd-funding.sol": "CrowdFunding"
+			"contracts/crowdFunding.sol": "CrowdFunding"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -361,12 +348,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/crowd-funding.sol": {
-			"keccak256": "0xb5b4acb6cf58b1004803f59d37e2dcf1ddc5b90340e5a30807795fe5161052fe",
+		"contracts/crowdFunding.sol": {
+			"keccak256": "0xbeca43328d979f893397ed50a36937f788f462bf6dbb1f9dbc7cb42055f9df2f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8f13b99de5b6459a9fe98955a3776e00c07b706e81573420149955bdcb4788e9",
-				"dweb:/ipfs/QmPTvURMTdwtdqeSgWE1qYki5Pjfn6BAra77m52W8NgehV"
+				"bzz-raw://647b949ac5a667d7988c1a60f9d453079c514a10c5acf23e0da178c453b315a9",
+				"dweb:/ipfs/QmYTy2Gr2VwaRgf9k6TW3R19Nm2ba1Q9Uf8DfPivsLi1Na"
 			]
 		}
 	},

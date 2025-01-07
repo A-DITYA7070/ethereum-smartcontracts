@@ -22,12 +22,12 @@
 				"outputs": [
 					{
 						"internalType": "address",
-						"name": "CampaignAddress",
+						"name": "campaignAddress",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "owner",
+						"name": "campaignOwner",
 						"type": "address"
 					},
 					{
@@ -39,6 +39,110 @@
 						"internalType": "uint256",
 						"name": "creationTime",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_goal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_durationInDays",
+						"type": "uint256"
+					}
+				],
+				"name": "createCampaign",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllCampaigns",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "campaignAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "campaignOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "creationTime",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct CrowdFundingFactory.Campaign[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getUserCampaigns",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "campaignAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "campaignOwner",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "creationTime",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct CrowdFundingFactory.Campaign[]",
+						"name": "",
+						"type": "tuple[]"
 					}
 				],
 				"stateMutability": "view",
@@ -71,6 +175,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "togglePause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -87,12 +198,12 @@
 				"outputs": [
 					{
 						"internalType": "address",
-						"name": "CampaignAddress",
+						"name": "campaignAddress",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "owner",
+						"name": "campaignOwner",
 						"type": "address"
 					},
 					{
@@ -123,7 +234,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/crowd-funding-factory.sol": "CrowdFundingFactory"
+			"contracts/crowdFundingFactory.sol": "CrowdFundingFactory"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -137,20 +248,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/crowd-funding-factory.sol": {
-			"keccak256": "0xc06c9c7169ef96bf9deb4aeea91cee815aa024b22e22a417ea89c70c953ae69d",
+		"contracts/crowdFunding.sol": {
+			"keccak256": "0xbeca43328d979f893397ed50a36937f788f462bf6dbb1f9dbc7cb42055f9df2f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5d69d1caccefc7266bce8580acec735b9d56cde3aef38dd67f327d983641a6ad",
-				"dweb:/ipfs/QmTcBvNJ9dkPCBTcaJD6pSbyWq44aYzmkyFRogsBWbHxdZ"
+				"bzz-raw://647b949ac5a667d7988c1a60f9d453079c514a10c5acf23e0da178c453b315a9",
+				"dweb:/ipfs/QmYTy2Gr2VwaRgf9k6TW3R19Nm2ba1Q9Uf8DfPivsLi1Na"
 			]
 		},
-		"contracts/crowd-funding.sol": {
-			"keccak256": "0x59e8880d1cb09be734e53ed4acf3498b0079cc95b162d362439a66a0897f0e90",
+		"contracts/crowdFundingFactory.sol": {
+			"keccak256": "0x990c1dbb132d91ce55c2e18295be5952129293abb2ce0340cde9e846c0699186",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b3b8b6dc17b35aa81ffac25fcf1b528535ef2bee27e6bf70749de45599e5085e",
-				"dweb:/ipfs/QmapVWPHjzUuy5ZeQQMrQjfK6H4yBSWvqERiPTc8Hdxzny"
+				"bzz-raw://6d0869807706ca53e780b12f46875d81742ffec428d8e134af86e227b376f9d1",
+				"dweb:/ipfs/QmX526jYm8QDLVoJX39ioA41RmHP7FaPoScy9ZDREw4645"
 			]
 		}
 	},
