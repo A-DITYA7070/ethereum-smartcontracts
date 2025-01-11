@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.3+commit.8d00100c"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -236,7 +236,7 @@
 		"compilationTarget": {
 			"contracts/crowdFundingFactory.sol": "CrowdFundingFactory"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
