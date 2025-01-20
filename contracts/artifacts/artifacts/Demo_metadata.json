@@ -4,7 +4,75 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getContractBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amt",
+						"type": "uint256"
+					}
+				],
+				"name": "transferEther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +101,11 @@
 	},
 	"sources": {
 		"contracts/artifacts/Task2.sol": {
-			"keccak256": "0x6e7f82cf7f41840242a1b348423b3f8c9411be3be860099e25f437a58c18d721",
+			"keccak256": "0xf2560c4ea033ca1b73272a425594281323f648603092c29e0830f9773dc11ef7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1238566571f29c0953ab3f87cf0d985bd2b442840f8fe3510b2d18c98a776e83",
-				"dweb:/ipfs/QmewekszKHVzneN4phMYMJG1quvZze4avVctuBPpJjK36i"
+				"bzz-raw://d6c6699273cc2b1c903adf4ba7707a534b9feb6fbcdfa91a689c793e5a26e01c",
+				"dweb:/ipfs/QmU5mB3wH9c5ZUYVZkSDsea15fzVpBb7di8XkwPgFRPubv"
 			]
 		}
 	},
