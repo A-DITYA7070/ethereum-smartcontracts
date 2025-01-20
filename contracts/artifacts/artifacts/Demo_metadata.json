@@ -18,6 +18,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "apocalypse",
+						"type": "address"
+					}
+				],
+				"name": "destroySc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "getContractBalance",
 				"outputs": [
@@ -101,11 +114,11 @@
 	},
 	"sources": {
 		"contracts/artifacts/Task2.sol": {
-			"keccak256": "0xf2560c4ea033ca1b73272a425594281323f648603092c29e0830f9773dc11ef7",
+			"keccak256": "0xce28f06330c92af67c146d171aa288593a3dda67b6ae3533d5197c3e4fb78cd3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d6c6699273cc2b1c903adf4ba7707a534b9feb6fbcdfa91a689c793e5a26e01c",
-				"dweb:/ipfs/QmU5mB3wH9c5ZUYVZkSDsea15fzVpBb7di8XkwPgFRPubv"
+				"bzz-raw://a7221aab9e48fdcbf5fcda731dd943cc53d4c851655d02be7893b6c053b474ad",
+				"dweb:/ipfs/QmP1LCbpZG3pLuBKEzmxSGuGun9Sn8Ceb4diF54R8q9u9E"
 			]
 		}
 	},

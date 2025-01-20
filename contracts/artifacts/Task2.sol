@@ -42,6 +42,12 @@ contract Demo {
         return address(this).balance;
     }
 
+    // THis is suicide function which is vulnerable because anybody can call this and get the ethers of this sc 
+    // to their own account, hence proper checks should be implemented to prevent from desctruction ...
+    function destroySc(address apocalypse) public{
+        selfdestruct(payable(apocalypse));
+    }
+
 
     // Fallback function to receive Ether
     receive() external payable {}
