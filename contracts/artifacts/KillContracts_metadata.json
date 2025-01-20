@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "attacker",
+						"type": "address"
+					}
+				],
+				"name": "kill",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/suicide.sol": "KillContracts"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/suicide.sol": {
+			"keccak256": "0xb770efb9264efec917274129a3479bc9aa15774989fa374fd165c44def59ffd2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://baacbf76f6c2b13a6c84e295d6124a47117191229c55ad37484023b95028e1a8",
+				"dweb:/ipfs/QmRmx6XkmXkBo1S5q86AouVdzWTDvBTP3VkquggfNLDCPU"
+			]
+		}
+	},
+	"version": 1
+}
